@@ -1,0 +1,21 @@
+<p>inputoutput works!</p>
+
+
+<div>  
+    Message : <h2>{{message}}</h2>  
+    <input type="button" value="Show Alert" (click)="showAlert()"/>  
+</div>  
+<div class="col-2">
+    <li>
+        <a  routerLink="/reactiveformcomponent" routerLinkActive="">form Component</a>
+    </li>
+    <li>
+        <a  routerLink="/testcomponent" routerLinkActive="">test Component</a>
+    </li>
+    <li>
+    </li>
+</div>
+<div class="col-10">
+    <router-outlet></router-outlet>
+
+</div>

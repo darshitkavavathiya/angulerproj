@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angulerproj';
+  public val: string = "This is alert popup message";  
+  public visibilityofinput:boolean = false;
+  showinputoutputpart(){
+    this.visibilityofinput? (this.visibilityofinput=false) : (this.visibilityofinput=true)
+  }
+
 }

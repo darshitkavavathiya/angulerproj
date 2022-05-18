@@ -1,0 +1,23 @@
+<p>Enter Details of employee</p>
+
+<form [formGroup]="employee" >
+
+    <input formControlName="firstname" type="text">
+    <p>{{name}}</p>
+
+    <input formControlName="lastname" type="text">
+    <p>{{employee.value.lastname}}</p>
+
+    <input value="male" formControlName="gender" type="radio">male
+    <input value="female" formControlName="gender" type="radio" >female
+    <P>{{employee.value.gender}}</P>
+
+    <select formControlName="country" >
+      <option *ngFor="let country of countrys" value={{country}}>{{country}}</option>
+    </select>
+
+    {{employee.value.country}}
+
+    <button type="button" (click)="submit()" >submit</button>
+
+  </form> 
