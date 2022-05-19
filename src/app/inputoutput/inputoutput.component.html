@@ -1,21 +1,28 @@
-<p>inputoutput works!</p>
 
 
-<div>  
-    Message : <h2>{{message}}</h2>  
-    <input type="button" value="Show Alert" (click)="showAlert()"/>  
+<div class="row bgcolor"  > 
+     <h2  [ngClass]="boolean?class:classinvert" class="col-6">this message is passed from parant component</h2>  
+     <h2  [ngClass]="boolean?class:classinvert" class="col-2">{{message}} </h2>  
+     <input type="button" value="Show Alert" (click)="showAlert()" class="col-1"/> 
+     <input type="button" value="changeclass" (click)="changeclass()" class="col-1"> 
 </div>  
-<div class="col-2">
-    <li>
-        <a  routerLink="/reactiveformcomponent" routerLinkActive="">form Component</a>
-    </li>
-    <li>
-        <a  routerLink="/testcomponent" routerLinkActive="">test Component</a>
-    </li>
-    <li>
-    </li>
+<div class="row">
+<div class="col-2 bgcolor2 p-0 text-center">
+  
+    
+
+        <div class="v-tab-btn"  routerLink="/testcomponent" >test Component</div>
+        <div class="v-tab-btn" routerLink="/reactiveformcomponent" >form Component</div>
+        <div class="v-tab-btn" routerLink="/directivecomponent" >Directives Component</div>
+        <div class="v-tab-btn" routerLink="/directivecomponent/ng-switch" >ng-switch Component</div>
+        <div class="v-tab-btn" routerLink="/pipecomponenet" >pipe Component</div>
+        <div class="v-tab-btn" routerLink="/custompipe"> custom pipe</div>
+
+
+   
 </div>
-<div class="col-10">
+<div class="col-10 bgcolor3" style="min-height: 700px;">
     <router-outlet></router-outlet>
 
+</div>
 </div>

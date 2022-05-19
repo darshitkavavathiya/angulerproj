@@ -1,0 +1,41 @@
+.success{
+    color: green!important;
+}
+.error{
+    color: red !important;
+}
+.style1{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.style2{
+    color: blue;
+    font-size: 22px;
+    font-weight: 500;
+}
+.bgcolor{
+    background-color: skyblue;
+}
+.bgcolor2{
+    background-color: rgb(180, 135, 235);
+}
+.bgcolor3{
+    background-color: rgb(135, 235, 233);
+}
+
+
+.v-tab-btn{
+    height: 30px;
+    background-color:rgb(145, 94, 206); 
+    border: solid rgb(180, 135, 235) 1px;
+    margin: 5px 0px;
+}
+.v-tab-btn :hover {
+    background-color: rgb(180, 135, 235)!important;
+    color: white!important;
+}
+.v-tab-btn.active{
+    background-color: rgb(180, 135, 235);
+    color: white;
+}

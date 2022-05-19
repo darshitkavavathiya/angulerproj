@@ -1,0 +1,16 @@
+<h2>directives component</h2>
+
+<div>  
+    <h1>This is a Attribute Directives</h1>  
+    <h1 [class.red]="true">Attribute Change</h1>  
+    <h1 [ngClass]="{'blue':true}">Attribute Change by Using NgClass</h1>  
+    <h1 [ngStyle]="{'font-size':'14px','color':'green'}">Attribute Change by Using NgStyle</h1>  
+      
+    <h1 [class.cyan]="showColor">Attribute Change</h1>  
+    <h1 [ngClass]="{'brown':showColor}">Attribute Change by Using NgClass</h1>  
+    <input type="button" value="Change Color" (click)="changeColor()" />  
+      
+    <h1 [class.cyan]="showColor">Attribute Change</h1>  
+    <h1 [ngClass]="{'cyan':showColor, 'red' : !showColor}">Attribute Change by Using NgClass</h1>  
+      
+</div>  
